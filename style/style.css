@@ -98,24 +98,15 @@ nav ul li {
       margin: 0 35px 0 200px;
 }
 
-.section-title {
-      font-size: 35px;
-      font-weight: bold;
-      color: #181818;
-}
 
 .about {
       border-radius: 10px;
       padding: 130px 150px;
       text-align: center;
       margin-top: 130px;
-
+      
 }
 
-.section-description {
-      font-size: 18px;
-      color: #757575;
-}
 
 .secondary-background {
       background-color: #fff8f3;
@@ -124,7 +115,7 @@ nav ul li {
 main {
       max-width: 1140px;
       margin: 0 auto;
-
+      
 }
 
 .item-description {
@@ -135,6 +126,15 @@ main {
       display: flex;
       justify-content: space-around;
       margin-top: 100px;
+}
+.section-title {
+      font-size: 35px;
+      font-weight: bold;
+      color: #181818;
+}
+.section-description {
+      font-size: 18px;
+      color: #757575;
 }
 
 .text-align {
@@ -215,12 +215,55 @@ footer {
       margin-top: 15px;
       padding: 15px 20px;
       margin-bottom: 10px;
-      width: 200px;
+      width: 300px;
 }
 
 .input-content {
       max-height: 300px;
-      width: 200px;
+      width: 300px;
       padding: 15px 20px;
 
+}
+.input-message {
+      max-height: 300px;
+      width: 300px;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      margin-top: 15px;
+      height: 100px;
+}
+.hide {
+      display: none;
+}
+@media screen and (max-width: 576px) {
+         .skills-container {
+           flex-direction: column;
+         }
+}
+@media screen and  (max-width: 576px) {
+      .resume-container {
+            flex-direction: column;
+          }
+}
+@media screen and (max-width: 576px) {
+      footer {
+            flex-direction: column;
+      }
+      footer {
+            padding: 20px;
+      }
+      .footer-column {
+            width: 50%;
+      }
+      .footer-column {
+            width: calc(100% - 40px);
+      }
+}
+@media screen  and (max-width: 576px) {
+      .about-items {
+            flex-direction: column;
+      }
+      .about {
+            padding: 20px;
+      }
 }
